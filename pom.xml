@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.sky</groupId>
+    <groupId>com.github.sky-gu</groupId>
     <artifactId>sky-spring-boot-dependencies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -64,7 +64,6 @@
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <mybatis-generator-maven-plugin.version>1.4.0</mybatis-generator-maven-plugin.version>
         <fastjson.version>1.2.68</fastjson.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 
     </properties>
 
@@ -315,7 +314,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <phase>verify</phase>
