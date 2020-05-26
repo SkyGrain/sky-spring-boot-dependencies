@@ -34,9 +34,9 @@
         </license>
     </licenses>
 
-    <!--    <scm>-->
-    <!--        <url>https://gitee.com/ework-cloud/ework-cloud-starter</url>-->
-    <!--    </scm>-->
+    <scm>
+        <url>https://github.com/SkyGrain/sky-spring-boot-dependencies</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,18 +65,11 @@
         <mybatis-generator-maven-plugin.version>1.4.0</mybatis-generator-maven-plugin.version>
         <fastjson.version>1.2.68</fastjson.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+
     </properties>
 
     <dependencyManagement>
         <dependencies>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.1.14.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
 
 
             <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
@@ -110,7 +103,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>easyexcel</artifactId>
-                <version>2.2.3</version>
+                <version>${easyexcel.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
