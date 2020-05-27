@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <name>sky-spring-boot-dependencies</name>
     <description>Custom spring boot starter</description>
+    <url>https://github.com/SkyGrain/sky-spring-boot-dependencies</url>
 
     <developers>
         <developer>
@@ -257,6 +258,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
+                        <version>3.0.1</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
@@ -270,6 +272,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.0.1</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
