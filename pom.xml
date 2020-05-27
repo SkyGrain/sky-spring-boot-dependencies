@@ -194,6 +194,14 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-server-cloud -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-cloud</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+
+
             <!-- https://mvnrepository.com/artifact/com.github.vanroy/spring-boot-starter-data-jest -->
             <dependency>
                 <groupId>com.github.vanroy</groupId>
