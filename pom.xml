@@ -57,6 +57,7 @@
         <mybatis-generator-maven-plugin.version>1.4.0</mybatis-generator-maven-plugin.version>
         <fastjson.version>1.2.68</fastjson.version>
         <spring-boot-dependencies.version>2.1.14.RELEASE</spring-boot-dependencies.version>
+        <spring-social-security.version>1.1.6.RELEASE</spring-social-security.version>
 
     </properties>
 
@@ -261,6 +262,13 @@
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
                 <version>${protobuf-java.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-security -->
+            <dependency>
+                <groupId>org.springframework.social</groupId>
+                <artifactId>spring-social-security</artifactId>
+                <version>${spring-social-security.version}</version>
             </dependency>
 
 
