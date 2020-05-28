@@ -89,12 +89,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
             <dependency>
@@ -232,6 +226,21 @@
             </dependency>
 
 
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
@@ -254,6 +263,16 @@
             <id>OSS</id>
             <build>
                 <plugins>
+                    <!-- compiler -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                            <source>1.8</source>
+                            <target>1.8</target>
+                        </configuration>
+                    </plugin>
+
                     <!--  Source  -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -281,6 +300,11 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <configuration>
+                            <charset>UTF-8</charset>
+                            <encoding>UTF-8</encoding>
+                            <docencoding>UTF-8</docencoding>
+                        </configuration>
                     </plugin>
                     <!--  GPG  -->
                     <plugin>
