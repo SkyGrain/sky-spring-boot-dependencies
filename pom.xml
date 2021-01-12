@@ -41,6 +41,7 @@
         <spring-cloud-alibaba-dependencies.version>2.2.3.RELEASE</spring-cloud-alibaba-dependencies.version>
 
 
+        <spring-boot-starter-json.version>2.3.7.RELEASE</spring-boot-starter-json.version>
         <easyexcel.version>2.2.7</easyexcel.version>
         <commons-lang3.version>3.11</commons-lang3.version>
         <commons-logging.version>1.2</commons-logging.version>
@@ -288,6 +289,14 @@
                 <artifactId>jdom2</artifactId>
                 <version>${jdom2.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-json -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-json</artifactId>
+                <version>${spring-boot-starter-json.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
