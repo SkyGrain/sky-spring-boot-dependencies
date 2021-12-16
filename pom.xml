@@ -36,37 +36,40 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
-        <spring-boot-dependencies.version>2.3.7.RELEASE</spring-boot-dependencies.version>
-        <spring-cloud-alibaba-dependencies.version>2.2.7.RELEASE</spring-cloud-alibaba-dependencies.version>
-
-
-        <spring-boot-starter-json.version>2.3.7.RELEASE</spring-boot-starter-json.version>
-        <easyexcel.version>2.2.7</easyexcel.version>
-        <commons-lang3.version>3.11</commons-lang3.version>
-        <commons-logging.version>1.2</commons-logging.version>
-        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
-        <mapstruct.version>1.4.1.Final</mapstruct.version>
-        <ons-client.version>1.8.7.3.Final</ons-client.version>
-        <opencsv.version>5.3</opencsv.version>
-        <protobuf-java.version>3.14.0</protobuf-java.version>
-        <aliyun-log-logback-appender.version>0.1.18</aliyun-log-logback-appender.version>
-        <guava-retrying.version>2.0.0</guava-retrying.version>
-        <elasticsearch.version>7.6.2</elasticsearch.version>
-        <elasticsearch-sql.version>6.3.0.0</elasticsearch-sql.version>
-        <spring-boot-starter-data-elasticsearch.version>2.3.7.RELEASE</spring-boot-starter-data-elasticsearch.version>
-        <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
+        <spring-cloud-dependencies.version>2021.0.0</spring-cloud-dependencies.version>
+        <spring-boot-dependencies.version>2.6.1</spring-boot-dependencies.version>
+        <spring-cloud-alibaba-dependencies.version>2021.1</spring-cloud-alibaba-dependencies.version>
+        <spring-boot-starter-json.version>2.6.1</spring-boot-starter-json.version>
+        <spring-boot-starter-data-elasticsearch.version>2.6.1</spring-boot-starter-data-elasticsearch.version>
+        <spring-boot-admin.version>2.5.4</spring-boot-admin.version>
         <spring-boot-starter-data-jest.version>3.3.4.RELEASE</spring-boot-starter-data-jest.version>
-        <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
-        <mybatis-generator-maven-plugin.version>1.4.0</mybatis-generator-maven-plugin.version>
-        <druid.version>1.2.4</druid.version>
-        <fastjson.version>1.2.75</fastjson.version>
-        <spring-social-security.version>1.1.6.RELEASE</spring-social-security.version>
-        <httpclient.version>4.5.13</httpclient.version>
-        <jdom2.version>2.0.6</jdom2.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
-        <pagehelper-spring-boot-starter.version>1.3.0</pagehelper-spring-boot-starter.version>
-        <log4j2.version>2.15.0</log4j2.version>
+        <springfox-swagger2.version>2.10.5</springfox-swagger2.version>
+        <spring-social-security.version>1.1.6.RELEASE</spring-social-security.version>
+        <pagehelper-spring-boot-starter.version>1.4.1</pagehelper-spring-boot-starter.version>
+
+        <elasticsearch.version>7.6.2</elasticsearch.version>
+        <elasticsearch-sql.version>7.8.0.1</elasticsearch-sql.version>
+
+        <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
+        <mybatis-generator-maven-plugin.version>1.4.0</mybatis-generator-maven-plugin.version>
+        <mybatis-plus-boot-starter.version>3.4.3.4</mybatis-plus-boot-starter.version>
+
+        <easyexcel.version>3.0.5</easyexcel.version>
+        <aliyun-log-logback-appender.version>0.1.19</aliyun-log-logback-appender.version>
+        <druid.version>1.2.8</druid.version>
+        <fastjson.version>1.2.78</fastjson.version>
+
+        <httpclient.version>4.5.13</httpclient.version>
+        <jdom2.version>2.0.6.1</jdom2.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <commons-logging.version>1.2</commons-logging.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <ons-client.version>2.0.1.Final</ons-client.version>
+        <opencsv.version>5.5.2</opencsv.version>
+        <protobuf-java.version>3.19.1</protobuf-java.version>
+        <guava-retrying.version>2.0.0</guava-retrying.version>
+        <log4j2.version>2.16.0</log4j2.version>
 
     </properties>
 
@@ -252,6 +255,14 @@
                 <version>${mybatis-generator-maven-plugin.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+
+
             <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -337,7 +348,6 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-bom</artifactId>
                 <version>${log4j2.version}</version>
-                <type>pom</type>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
