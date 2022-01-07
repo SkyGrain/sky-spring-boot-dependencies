@@ -49,7 +49,7 @@
         <mapstruct.version>1.4.1.Final</mapstruct.version>
         <ons-client.version>1.8.7.3.Final</ons-client.version>
         <opencsv.version>5.3</opencsv.version>
-        <protobuf-java.version>3.14.0</protobuf-java.version>
+        <protobuf-java.version>3.16.1</protobuf-java.version>
         <aliyun-log-logback-appender.version>0.1.18</aliyun-log-logback-appender.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
         <elasticsearch.version>7.6.2</elasticsearch.version>
