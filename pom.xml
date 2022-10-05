@@ -52,7 +52,7 @@
         <protobuf-java.version>3.14.0</protobuf-java.version>
         <aliyun-log-logback-appender.version>0.1.18</aliyun-log-logback-appender.version>
         <guava-retrying.version>2.0.0</guava-retrying.version>
-        <elasticsearch.version>7.6.2</elasticsearch.version>
+        <elasticsearch.version>7.14.0</elasticsearch.version>
         <elasticsearch-sql.version>6.3.0.0</elasticsearch-sql.version>
         <spring-boot-starter-data-elasticsearch.version>2.3.7.RELEASE</spring-boot-starter-data-elasticsearch.version>
         <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
